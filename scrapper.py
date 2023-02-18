@@ -32,8 +32,12 @@ def all_courses():
         
         course_list = list(ineuron_course_json['props']['pageProps']['initialState']['init']['courses'].keys())
         logging.info("Course list has been created")
+
+        s="  "
+        course_string = s.join(course_list).replace("  ",",")
+        logging.info("list has been converted to string")
         
-        return course_list
+        return course_string
     except Exception as e:
         logging.error(e)
 

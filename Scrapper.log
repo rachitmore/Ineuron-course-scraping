@@ -1,27 +1,16 @@
-2023-02-18 15:13:22,538  * Debugger is active!
-2023-02-18 15:13:22,545  * Debugger PIN: 977-151-946
-2023-02-18 15:13:35,897 127.0.0.1 - - [18/Feb/2023 15:13:35] "GET /?forwardBtn= HTTP/1.1" 200 -
-2023-02-18 15:13:36,163 127.0.0.1 - - [18/Feb/2023 15:13:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
-2023-02-18 15:13:36,163 127.0.0.1 - - [18/Feb/2023 15:13:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-2023-02-18 15:13:36,296 127.0.0.1 - - [18/Feb/2023 15:13:36] "GET /?forwardBtn= HTTP/1.1" 200 -
-2023-02-18 15:13:36,310 127.0.0.1 - - [18/Feb/2023 15:13:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
-2023-02-18 15:13:36,311 127.0.0.1 - - [18/Feb/2023 15:13:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-2023-02-18 15:13:40,248 Empty list has been created
-2023-02-18 15:13:40,403 Url responded
-2023-02-18 15:13:41,280 Read HTML page
-2023-02-18 15:13:41,280 File closed
-2023-02-18 15:13:41,292 Soup has been made
-2023-02-18 15:13:41,293 Found script in soup
-2023-02-18 15:13:41,319 Json file has been loaded
-2023-02-18 15:13:41,319 Got course description from json file
-2023-02-18 15:13:41,319 Got course title from json file
-2023-02-18 15:13:41,319 Got course mode from json file
-2023-02-18 15:13:41,319 Got course curriculum from json file
-2023-02-18 15:13:41,320 List has been created for curriculum description 
-2023-02-18 15:13:41,320 Tuple has been created for course details
-2023-02-18 15:13:41,322 Tuple unpacking has been done 
-2023-02-18 15:13:41,322 Dictionary has been created for course
-2023-02-18 15:13:42,203 User input is taken and results Generated
-2023-02-18 15:13:42,221 127.0.0.1 - - [18/Feb/2023 15:13:42] "POST /courses HTTP/1.1" 200 -
-2023-02-18 15:13:42,247 127.0.0.1 - - [18/Feb/2023 15:13:42] "[33mGET /style.css HTTP/1.1[0m" 404 -
-2023-02-18 15:13:42,252 127.0.0.1 - - [18/Feb/2023 15:13:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-02-18 16:24:42,147  * Debugger is active!
+2023-02-18 16:24:42,152  * Debugger PIN: 977-151-946
+2023-02-18 16:24:47,737 127.0.0.1 - - [18/Feb/2023 16:24:47] "GET /?forwardBtn= HTTP/1.1" 200 -
+2023-02-18 16:24:48,000 127.0.0.1 - - [18/Feb/2023 16:24:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-18 16:24:48,001 127.0.0.1 - - [18/Feb/2023 16:24:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-02-18 16:24:50,065 Sent request to fetch url page
+2023-02-18 16:24:50,807 Url read
+2023-02-18 16:24:50,807 File closed
+2023-02-18 16:24:50,823 Soup created
+2023-02-18 16:24:50,824 Found Script from soup
+2023-02-18 16:24:50,866 File loaded in json
+2023-02-18 16:24:50,866 Course list has been created
+2023-02-18 16:24:50,866 list has been converted to string
+2023-02-18 16:24:50,874 127.0.0.1 - - [18/Feb/2023 16:24:50] "POST /all%20courses HTTP/1.1" 200 -
+2023-02-18 16:24:50,893 127.0.0.1 - - [18/Feb/2023 16:24:50] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2023-02-18 16:24:50,897 127.0.0.1 - - [18/Feb/2023 16:24:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
