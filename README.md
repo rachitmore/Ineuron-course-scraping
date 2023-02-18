@@ -23,8 +23,8 @@
 
 <!-- CONTACT -->
 ## 📌 Contact
-[![Rachit More| LinkedIn]][reach_linkedin]
-[![rachitmore | GitHub]][reach_Github]
+[[Rachit More| LinkedIn]][reach_linkedin]
+[[rachitmore | GitHub]][reach_Github]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
