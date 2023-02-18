@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![forthebadge made-with-python]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -21,20 +21,13 @@
 
 
 
-
-
 <!-- CONTACT -->
 ## 📌 Contact
 [![Rachit More| LinkedIn]
-[![Rachit More | G Mail][reach_gmail]
-[![rachitmore | GitHub]labelColor=blue)][reach_outlook]
+[![Rachit More | G Mail][reach_Gmail]
+[![rachitmore | GitHub]][reach_Github]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-
-
 
 <!-- MARKDOWN LINKS  -->
 
