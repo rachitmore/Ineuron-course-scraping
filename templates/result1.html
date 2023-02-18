@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Result Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">All courses</div>
+      <div style="overflow-x:auto; overflow-y:scroll;">
+          <table>
+              <tr>
+                 <th>Ineuron Courses</th>
+               
+
+              </tr>
+          <tr>
+              <td>{{courses}}</td>
+          
+
+          </tr>
+          </table>
+      </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

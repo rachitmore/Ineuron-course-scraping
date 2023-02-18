@@ -1,48 +1,65 @@
 import logging
-import json
 from flask import Flask, render_template, request
 from flask_cors import CORS, cross_origin
-from urllib.request import urlopen as uReq
-from bs4 import BeautifulSoup as bs
+from scrapper import course_search,all_courses
+from mongodb import mongodbconnection as mcon
+# from mysql import mysqlconnection as scon
 
-ineuron_course = "https://ineuron.ai/courses"
-uclient = uReq(ineuron_course)
-ineuron_page = uclient.read()
-uclient.close()
-ineuron_html = bs(ineuron_page,"html.parser")
-course_description = ineuron_html.findAll("script")
-course = course_description[25]
-ineuron_course_json = json.loads(course.get_text())
-course_list = list(ineuron_course_json['props']['pageProps']['initialState']['init']['courses'].keys())
+logging.basicConfig(filename="application.log",
+                    format='%(asctime)s %(message)s', filemode='w', level=logging.DEBUG)
 
-print(course_list)
+# ineuronsqldb = scon(username = "root", password = "mysql@123"
+#                     ,db_name = "Ineuron_Course", table_name = "Course_table")
+# data_column = "(Title text, Mode text, Description text, Curriculum text, Price int)" 
+# ineuronsqldb.create_table(data_column)
 
-string_search =input("enter the course name : ").replace(" ","-")
-ineuron_course = "https://ineuron.ai/course/"
-course_page = ineuron_course + string_search
-uclient = uReq(course_page)
-ineuron_page = uclient.read()
-uclient.close()
-soup = bs(ineuron_page,"html.parser")
-course_html = soup.findAll("script")
-course = course_html[23]
-ineuron_course_json = json.loads(course.get_text())
+ineuronmdb = mcon(username = 'rachitmore3', password = 'rachitmore3'
+                ,db_name = "Ineuron_Course",db_collection_name = "Course_Collection" )
 
-course_description = ineuron_course_json["props"]["pageProps"]["data"]["details"]["description"]
 
-course_title = ineuron_course_json["props"]["pageProps"]["data"]["details"]["seo"]["keywords"]
+app = Flask(__name__)
+CORS(app)
 
-course_mode = ineuron_course_json["props"]["pageProps"]["data"]["details"]["mode"]
-course_curriculum = ineuron_course_json["props"]["pageProps"]["data"]["meta"]['curriculum']
-curriculum_description = []
-for i in course_curriculum:
-    lst=[]
-    for m in course_curriculum[i]["items"]:
-        lst.append(m['title'])
-    d={course_curriculum[i]["title"]:lst}
-    curriculum_description.append(d)
-print(f"Course Title : {course_title}" )
-print("\n")
-print(f"Course Mode : {course_mode}")
-print("\n")
-print(f"Course Description : {course_description}")
+@app.route('/', methods=['GET'])
+@cross_origin()
+def homepage():
+    return render_template("index.html",)
+
+
+@app.route("/all courses" , methods = ['POST'])
+@cross_origin()
+def all_course_page():
+        courses = all_courses()
+        return render_template("result1.html",courses=courses)
+
+@app.route("/courses" , methods = ['POST', 'GET'])
+@cross_origin()
+def index():
+    if request.method == 'POST':
+        courses = []
+        logging.info("Empty list has been created")
+        
+
+        searchString = request.form['content']
+        course_details = course_search(searchString) 
+        
+        title,mode,description,curriculum,price = course_details
+        logging.info("Tuple unpacking has been done ")
+        
+        mydict = {"Course Title": title, "Course Mode": mode, "Description": description ,
+                  "Course Curriculum": curriculum,"Course Price":price}
+        courses.append(mydict)
+        logging.info("Dictionary has been created for course")
+
+        # value = f'({title}","{mode}","{description}","{curriculum}","{price})'
+        # ineuronsqldb.insert_data(value)
+        
+        ineuronmdb.insert(mydict)
+        logging.info("User input is taken and results Generated")
+
+        return render_template("result.html",courses=courses)
+
+
+if __name__ == "__main__":
+    app.config['DEBUG'] = True
+    app.run(host='0.0.0.0', port=8000)
