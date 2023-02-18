@@ -6,7 +6,7 @@ class mysqlconnection:
         self.password = password
         self.db_name = db_name
         self.table_name = table_name
-        self.mydb = conn.connect(host = 'localhost',user = 'root' ,password = "mysql@123" )
+        self.mydb = conn.connect(host = 'localhost',user = self.username ,password = self.password )
         self.cursor = self.mydb.cursor()
         
     def create_db(self):

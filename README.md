@@ -23,8 +23,7 @@
 
 <!-- CONTACT -->
 ## 📌 Contact
-[![Rachit More| LinkedIn]
-[![Rachit More | G Mail][reach_Gmail]
+[![Rachit More| LinkedIn]][reach_linkedin]
 [![rachitmore | GitHub]][reach_Github]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -45,4 +44,4 @@
 <!--contact-->
 [reach_linkedin]: https://linkedin.com/in/rachit-more-30a63418a
 [reach_github]: https://github.com/rachitmore
-[reach_outlook]: mail_to-rachitmore3@gmail.com
+
