@@ -3,16 +3,17 @@ from flask import Flask, render_template, request
 from flask_cors import CORS, cross_origin
 from scrapper import course_search,all_courses
 from mongodb import mongodbconnection as mcon
-from mysqldb import mysqlconnection as scon
+# from mysqldb import mysqlconnection as scon
 
 #Setting up the logging to get the status 
 logging.basicConfig(filename="application.log",
                     format='%(asctime)s %(message)s', filemode='w', level=logging.DEBUG)
 
-#Setting up the MySQL database connection
-ineuronsqldb = scon(db_name = "Ineuron_Course", table_name = "Course_table")
-data_column = "(Title text, Mode text, Description text, Curriculum text, Price int)" 
-ineuronsqldb.create_table(data_column)
+###Setting up the cloud MySql is not possible at the moment###
+# #Setting up the MySQL database connection
+# ineuronsqldb = scon(db_name = "Ineuron_Course", table_name = "Course_table")
+# data_column = "(Title text, Mode text, Description text, Curriculum text, Price int)" 
+# ineuronsqldb.create_table(data_column)
 
 #Setting up the MongoDb database connection
 ineuronmdb = mcon(username = 'rachitmore3', password = 'rachitmore3'
@@ -60,10 +61,11 @@ def index():
         courses.append(mydict) #Appending the dictionary to list course for result page rendering
         logging.info("Dictionary has been created for course")
 
+        # This code will be work after connecting to cloud MySql
         #Creating string to dump data into MySql database
-        value = f'({title}","{mode}","{description}","{curriculum}","{price})' 
-        ineuronsqldb.insert_data(value)
-        logging.info("Result is Dumpped in MySql database")
+        # value = f'({title}","{mode}","{description}","{curriculum}","{price})' 
+        # ineuronsqldb.insert_data(value)
+        # logging.info("Result is Dumpped in MySql database")
         
         #Dumping the dictionary to MongoDb database
         ineuronmdb.insert(mydict)

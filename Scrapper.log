@@ -1,0 +1,37 @@
+2023-02-19 18:48:30,334  * Debugger is active!
+2023-02-19 18:48:30,334  * Debugger PIN: 977-151-946
+2023-02-19 18:49:50,693 127.0.0.1 - - [19/Feb/2023 18:49:50] "GET / HTTP/1.1" 200 -
+2023-02-19 18:49:50,970 127.0.0.1 - - [19/Feb/2023 18:49:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-02-19 18:49:50,971 127.0.0.1 - - [19/Feb/2023 18:49:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2023-02-19 18:49:51,002 127.0.0.1 - - [19/Feb/2023 18:49:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-02-19 18:49:55,947 Sent request to fetch url sourse code
+2023-02-19 18:49:57,820 Url read
+2023-02-19 18:49:57,820 File closed
+2023-02-19 18:49:57,845 Soup created
+2023-02-19 18:49:57,845 Found Script from soup
+2023-02-19 18:49:57,889 File loaded in json
+2023-02-19 18:49:57,890 Course list has been created
+2023-02-19 18:49:57,890 list has been converted to string
+2023-02-19 18:49:57,911 127.0.0.1 - - [19/Feb/2023 18:49:57] "POST /all%20courses HTTP/1.1" 200 -
+2023-02-19 18:49:57,934 127.0.0.1 - - [19/Feb/2023 18:49:57] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2023-02-19 18:49:57,938 127.0.0.1 - - [19/Feb/2023 18:49:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-02-19 18:50:27,544 Empty list has been created
+2023-02-19 18:50:27,667 Url responded
+2023-02-19 18:50:28,422 Read HTML page
+2023-02-19 18:50:28,423 File closed
+2023-02-19 18:50:28,436 Soup has been made
+2023-02-19 18:50:28,436 Found script in soup
+2023-02-19 18:50:28,465 Json file has been loaded
+2023-02-19 18:50:28,465 Got course description from json file
+2023-02-19 18:50:28,465 Got course title from json file
+2023-02-19 18:50:28,465 Got course mode from json file
+2023-02-19 18:50:28,465 Got course curriculum from json file
+2023-02-19 18:50:28,466 List has been created for curriculum description 
+2023-02-19 18:50:28,466 Tuple has been created for course details
+2023-02-19 18:50:28,468 Tuple unpacking has been done 
+2023-02-19 18:50:28,468 Dictionary has been created for course
+2023-02-19 18:50:29,817 Result is Dumpped in MongoDb database
+2023-02-19 18:50:29,817 User input is taken and results Generated
+2023-02-19 18:50:29,833 127.0.0.1 - - [19/Feb/2023 18:50:29] "POST /courses HTTP/1.1" 200 -
+2023-02-19 18:50:29,852 127.0.0.1 - - [19/Feb/2023 18:50:29] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2023-02-19 18:50:29,855 127.0.0.1 - - [19/Feb/2023 18:50:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
