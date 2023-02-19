@@ -1,6 +1,6 @@
 import pymongo
 
-#This class will be used for MongoDB database operations and
+#This class will be used for MongoDB database operations 
 class mongodbconnection:
     """
     This class will be used for MongoDB database insert_one operation 
