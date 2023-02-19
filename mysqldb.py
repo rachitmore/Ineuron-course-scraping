@@ -1,4 +1,5 @@
-import mysql.connector as conn
+import mysql.connector
+from mysql.connector.constants import ClientFlag
 
 #This class will be used for MySQL database operations
 class mysqlconnection:
@@ -10,7 +11,13 @@ class mysqlconnection:
     def __init__(self,db_name,table_name):
         self.db_name = db_name
         self.table_name = table_name
-        self.mydb = conn.connect(host = "localhost", user = "root", password = "mysql123")
+        self.mydb = conn.connect({
+    'user': 'uebmxkeuemkpvpuc',
+    'password': '1qRaxNJll4KA7XzmNbef',
+    'host': 'bedtdss1qgi0ejulmur0-mysql.services.clever-cloud.com',
+    "database" : "bedtdss1qgi0ejulmur0",
+    "port" : "3306",
+})
         self.cursor = self.mydb.cursor()
         
     def create_db(self):
