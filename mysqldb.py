@@ -30,8 +30,3 @@ class mysqlconnection:
         insert_query = self.cursor(f"insert into {self.table_name}.{self.db_name} values"+{self.data})
         return insert_query
     
-ineuronsqldb = mysqlconnection(db_name = "Ineuron_Course", table_name = "Course_table")
-
-data_column = "(Title text, Mode text, Description text, Curriculum text, Price int)" 
-
-ineuronsqldb.create_table(data_column)
