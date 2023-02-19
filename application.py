@@ -22,7 +22,8 @@ ineuronmdb = mcon(username = 'rachitmore3', password = 'rachitmore3'
                 ,db_name = "Ineuron_Course",db_collection_name = "Course_Collection" )
 
 #Connecting to Flask
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 CORS(app)
 
 #Creating Homepage
