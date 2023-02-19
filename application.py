@@ -9,11 +9,13 @@ from mongodb import mongodbconnection as mcon
 logging.basicConfig(filename="application.log",
                     format='%(asctime)s %(message)s', filemode='w', level=logging.DEBUG)
 
+
 ###Setting up the cloud MySql is not possible at the moment###
 # #Setting up the MySQL database connection
 # ineuronsqldb = scon(db_name = "Ineuron_Course", table_name = "Course_table")
 # data_column = "(Title text, Mode text, Description text, Curriculum text, Price int)" 
 # ineuronsqldb.create_table(data_column)
+
 
 #Setting up the MongoDb database connection
 ineuronmdb = mcon(username = 'rachitmore3', password = 'rachitmore3'
@@ -77,4 +79,4 @@ def index():
 
 if __name__ == "__main__":
     app.config['DEBUG'] = True
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=5000)
