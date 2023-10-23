@@ -17,7 +17,7 @@
 * Storing the scrapped data into MongoDB.
 * Storing the scrapped data into MySQL.
 * Building a Flask App to view scrapped data.
-* Deploying the app in AWS,Azure and beanstack.
+* Deploying the app in AWS.
 
 
 
@@ -32,10 +32,8 @@
 
 <!-- Tools Used -->
 [Visual Studio]: https://code.visualstudio.com/
-[postman]: https://www.postman.com/
 [git]: https://git-scm.com/
 [github]: https://github.com/
-[microsoft_azure]: https://azure.microsoft.com/en-in/features/azure-portal/
 [python]: https://www.python.org/
 [mongodb]: https://www.mongodb.com/
 [flask]: https://flask.palletsprojects.com/en/2.1.x/
