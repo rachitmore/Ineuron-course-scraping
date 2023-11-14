@@ -1,45 +1,52 @@
-<div id="top"></div>
+# iNeuron Web Scraping Project
+
+## Description
+This project is a web scraping application developed to extract valuable data from the iNeuron website. The main focus is on retrieving key details such as course title, course mode, curriculum, and pricing.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+1. Clone the repository: `git clone https://github.com/rachitmore/Ineuron-course-scraping.git`
+2. Navigate to the project directory: `cd Ineuron-course-scraping`
+3. Install dependencies: `pip install -r requirements.txt`
+
+## Usage
+To use this web scraping application, follow these steps:
+1. Run the main script: `python application.py`
+2. Search the course in the search bar.
+3. The application will fetch data from the iNeuron website, focusing on course title, mode, curriculum, and pricing.
+4. View the extracted data in the output.
+
+## Technologies Used
+The following technologies were used in the development of this web scraping project:
+
+- **Python:** The primary programming language for the web scraping script.
+- **Beautiful Soup:** A Python library for pulling data out of HTML and XML files.
+- **Requests:** A Python library for making HTTP requests to fetch website data.
+- **MongoDB:** A NoSQL database used to store and manage extracted data.
+- **Git:** Version control system used for tracking changes in the source code.
+- **GitHub:** Hosting platform for version control and collaboration.
+- **Markdown:** Lightweight markup language used for writing README and documentation.
+- **AWS Elastic Beanstalk:** Cloud service used for deploying and scaling web applications.
 
 
+## Contributing
+Contributions are welcome! Follow these steps:
+1. Fork the project.
+2. Create a new branch: `git checkout -b feature-branch`
+3. Make your changes and commit them: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-branch`
+5. Open a pull request.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/rachitmore">
-  </a>
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-</div>
+## Contact
+For any questions or concerns, please contact Rachit More (mailto:rachitmore3@gmail.com).
 
-
-<!-- ABOUT -->
-## 👨‍💻 About The Project
-* Project is about to get the information about ineuron courses.
-* Storing the scrapped data into MongoDB.
-* Storing the scrapped data into MySQL.
-* Building a Flask App to view scrapped data.
-* Deploying the app in AWS.
-
-
-
-<!-- CONTACT -->
-## 📌 Contact
-[[Rachit More| LinkedIn]][reach_linkedin]
-[[rachitmore | GitHub]][reach_Github]
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS  -->
-
-<!-- Tools Used -->
-[Visual Studio]: https://code.visualstudio.com/
-[git]: https://git-scm.com/
-[github]: https://github.com/
-[python]: https://www.python.org/
-[mongodb]: https://www.mongodb.com/
-[flask]: https://flask.palletsprojects.com/en/2.1.x/
-[BeautifulSoup]:https://www.crummy.com/software/BeautifulSoup
-
-<!--contact-->
-[reach_linkedin]: https://linkedin.com/in/rachit-more-30a63418a
-[reach_github]: https://github.com/rachitmore
-
+## Acknowledgments
+Special thanks to iNeuron for providing valuable informations for this project.
