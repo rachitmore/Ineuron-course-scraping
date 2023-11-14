@@ -6,8 +6,11 @@ This project is a web scraping application developed to extract valuable data fr
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/rachitmore/Ineuron-course-scraping.git`
@@ -16,10 +19,11 @@ This project is a web scraping application developed to extract valuable data fr
 
 ## Usage
 To use this web scraping application, follow these steps:
-1. Run the main script: `python application.py`
-2. Search the course in the search bar.
-3. The application will fetch data from the iNeuron website, focusing on course title, mode, curriculum, and pricing.
-4. View the extracted data in the output.
+1. Run the Flask application: `python application.py`
+2. Open your web browser and navigate to `http://127.0.0.1:5000/`
+3. Search for the course in the search bar.
+4. The application will fetch data from the iNeuron website, focusing on course title, mode, curriculum, and pricing.
+5. View the extracted data in the output.
 
 ## Technologies Used
 The following technologies were used in the development of this web scraping project:
@@ -28,11 +32,11 @@ The following technologies were used in the development of this web scraping pro
 - **Beautiful Soup:** A Python library for pulling data out of HTML and XML files.
 - **Requests:** A Python library for making HTTP requests to fetch website data.
 - **MongoDB:** A NoSQL database used to store and manage extracted data.
+- **Flask:** Web framework used for building the application.
 - **Git:** Version control system used for tracking changes in the source code.
 - **GitHub:** Hosting platform for version control and collaboration.
 - **Markdown:** Lightweight markup language used for writing README and documentation.
 - **AWS Elastic Beanstalk:** Cloud service used for deploying and scaling web applications.
-
 
 ## Contributing
 Contributions are welcome! Follow these steps:
@@ -46,7 +50,7 @@ Contributions are welcome! Follow these steps:
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any questions or concerns, please contact Rachit More (mailto:rachitmore3@gmail.com).
+For any questions or concerns, please contact [Rachit More](mailto:rachitmore3@gmail.com).
 
 ## Acknowledgments
-Special thanks to iNeuron for providing valuable informations for this project.
+Special thanks to iNeuron for providing valuable information for this project.
